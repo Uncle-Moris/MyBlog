@@ -7,5 +7,6 @@ class Posts(models.Model):
     content = models.CharField()
     tag_is = models.ForeignKey(Tags.id)
 
+
 class Tags(models.Model):
     id = models.AutoField(primary_key=True)
