@@ -1,14 +1,11 @@
-# from django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
+from .models import Post
 
 
-def Offer_1(reqest):
-    return HttpResponse("Offer 1 !")
+def posts_list(request):
+    posts_list = Post.objects.all()
+    context = {'posts_list': posts_list}
+    return render(request,'posts/posts_list.html', context=context)
 
-
-def Offer_2(reqest):
-    return HttpResponse("Offer 2 !!")
-
-
-def Offer_3(reqest):
-    return HttpResponse("Offer 3 !!!")
