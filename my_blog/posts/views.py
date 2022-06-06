@@ -7,5 +7,11 @@ from .models import Post
 def posts_list(request):
     posts_list = Post.objects.all()
     context = {'posts_list': posts_list}
-    return render(request,'posts/posts_list.html', context=context)
+    return render(request,'posts/list.html', context)
+
+
+def posts_details(request):
+    post_details = Post.objects.first()
+    context = {'details': post_details}
+    return render(request, 'posts/details.html', context)
 
