@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Posts list</h1>
+{% extends 'main/templates/main/home.html' %}
+
+{% block content %}
+<h1>Newest posts</h1>
     <ol>
         {% for post in posts_list %}
         <li>{{ post.title}}   {{post.content}}</li>
         {% endfor %}
     </ol>
-
-
-</body>
-</html>
+{% endblock %}
