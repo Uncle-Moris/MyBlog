@@ -1,6 +1,6 @@
 from random import randint
 from faker import Faker
-from my_blog.posts.models import Post
+from .models import Post
 
 fake = Faker()
 
