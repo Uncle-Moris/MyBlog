@@ -10,8 +10,8 @@ def posts_list(request):
     return render(request,'posts/list.html', context)
 
 
-def posts_details(request):
-    post_details = Post.objects.first()
+def posts_details(request, post_id: int):
+    post_details = Post.objects.get(pk=post_id)
     context = {'details': post_details}
     return render(request, 'posts/details.html', context)
 

@@ -1,10 +1,13 @@
-{% extends 'main/templates/main/home.html' %}
+{% extends 'posts/home.html' %}
 
 {% block content %}
 <h1>Newest posts</h1>
     <ol>
         {% for post in posts_list %}
-        <li>{{ post.title}}   {{post.content}}</li>
+        <li>
+            <a href="/posts/{{ post.id }}">{{ post.title}}</a>
+
+        </li>
         {% endfor %}
     </ol>
 {% endblock %}
