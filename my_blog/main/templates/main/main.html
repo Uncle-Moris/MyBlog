@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<h1>The grates One</h1>
+<img src="{% static 'main/img/janpawel.jpeg' %}">
 <nav>
     <ul>
         <li>
@@ -14,9 +13,6 @@
             <a href="{% url 'main:home' %}"> Hmoe</a>
         </li>
     </ul>
-</nav>
-<h1>Main</h1>
 
-<footer>It is a footer </footer>
-</body>
-</html>
+</nav>
+{% endblock %}

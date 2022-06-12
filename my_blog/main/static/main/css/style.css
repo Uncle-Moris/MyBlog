@@ -1,0 +1,14 @@
+body {
+    background-color: aquamarine;
+}
+h1 {
+    font-family: "Times New Roman";
+    text-align: center;
+}
+.content_box{
+    background-color: lightblue;
+    padding-top: 1px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+}
