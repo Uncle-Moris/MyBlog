@@ -5,10 +5,11 @@ h1 {
     font-family: "Times New Roman";
     text-align: center;
 }
-.content_box{
-    background-color: lightblue;
-    padding-top: 1px;
-  padding-right: 3px;
-  padding-bottom: 5px;
-  padding-left: 8px;
+.content_box {
+    padding: 0;
+}
+#beautiful_me{
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
 }
