@@ -1,5 +1,9 @@
 body {
-    background-color: blueviolet;
+    background-color: rebeccapurple;
+}
+footer{
+    background-color: blue;
+    padding-bottom: 0;
 }
 h1 {
     font-family: "Times New Roman";
