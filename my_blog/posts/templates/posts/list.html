@@ -2,11 +2,13 @@
 
 {% block content %}
 <h1>Newest posts</h1>
-    <ol>
+    <div class="container">
+    <ul class="list-group">
         {% for post in posts_list %}
-        <li>
+        <li class="list-group-item">
             <a href="{% url 'posts:details' post.id %}">{{post.title}}</a>
         </li>
         {% endfor %}
-    </ol>
+    </ul>
+    </div>
 {% endblock %}

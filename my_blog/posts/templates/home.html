@@ -7,21 +7,25 @@
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
-<nav>
-    <ul>
-        <li>
-            <a href="{% url 'posts:list' %}"> All Posts </a>
-        </li>
-        <li>
-            <a href="{% url 'main:home' %}"> Home </a>
-        </li>
-    </ul>
-</nav>
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="nav-item">
+                <a href="{% url 'posts:list' %}" class="nav-link px-2 link-secondary"> All Posts </a>
+            </li>
+            <li>
+                <a href="{% url 'main:home' %}" class="nav-link px-2 link-secondary"> Home </a>
+            </li>
+        </ul>
+</header>
+<main class="container justify-content-center">
+    {% block title %}
+    {% endblock %}
     {% block content %}
     {% endblock %}
-<footer>It is a footer
-    <nav>
-        <p>
+</main>
+<footer class="bg-dark text-center text-white">It is a footer
+    <nav class="container p-4 pb-0">
+        <p class="container p-4 pb-0">
             Read more about
           <a href="{% url 'main:about' %}">here</a>
         </p>

@@ -1,18 +1,11 @@
 {% extends 'home.html' %}
 {% load static %}
+{% block title %}
+<h1> Jan Paweł II</h1>
+{% endblock %}
+
 {% block content %}
 <h1>The grates One</h1>
 <img src="{% static 'main/img/janpawel.jpeg' %}">
-<nav>
-    <ul>
-        <li>
-            <a href="{% url 'posts:list' %}"> All Posts </a>
 
-        </li>
-        <li>
-            <a href="{% url 'main:home' %}"> Hmoe</a>
-        </li>
-    </ul>
-
-</nav>
 {% endblock %}
