@@ -1,8 +1,12 @@
 {% extends 'home.html' %}
 
+<!-- The title of post list   -->
+{% block title %}
+    <h1>The Posts</h1>
+{% endblock %}
+
 {% block content %}
-<h1>Newest posts</h1>
-    <div class="container">
+<div class="container">
     <ul class="list-group">
         {% for post in posts_list %}
         <li class="list-group-item">
@@ -10,5 +14,5 @@
         </li>
         {% endfor %}
     </ul>
-    </div>
+</div>
 {% endblock %}
