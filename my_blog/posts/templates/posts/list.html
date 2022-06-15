@@ -2,10 +2,11 @@
 
 <!-- The title of post list   -->
 {% block title %}
-    <h1>The Posts</h1>
+    The Posts
 {% endblock %}
 
 {% block content %}
+<h1>The Posts</h1>
 <div class="container">
     <ul class="list-group">
         {% for post in posts_list %}

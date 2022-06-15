@@ -1,16 +1,17 @@
 {% extends 'home.html' %}
 
-{% block content %}
+
 
 <!-- The static title of Post  -->
 {% block title %}
-    <h1 class="title">{{ details.title }}</h1>
+{{ details.title }}
 {% endblock %}
 
-
-<div class="content_box">
-   <p>
-   {{ details.content }}
-   </p>
-</div>
+{% block content %}
+<section class="content_box">
+    <h1 class="title">{{ details.title }}</h1>
+    <p>
+        {{ details.content }}
+    </p>
+</section>
 {% endblock %}
