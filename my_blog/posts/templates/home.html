@@ -32,15 +32,22 @@
         {% endblock %}
     </main>
     <footer class="bg-blue text-center text-white">
-        <div>
+        <div class="my-media">
             <strong>My media</strong>
-            <a href="https://www.linkedin.com/in/maurycy-wo%C5%BAnica" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Uncle-Moris" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.youtube.com/channel/UCkjLEx2izZMNuCD25dVVWwg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/unclemoris/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/moris_uncle" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <ul>
+                 <li><a href="https://www.linkedin.com/in/maurycy-wo%C5%BAnica" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                 <li><a href="https://github.com/Uncle-Moris" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                 <li><a href="https://www.youtube.com/channel/UCkjLEx2izZMNuCD25dVVWwg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                 <li><a href="https://www.instagram.com/unclemoris/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                 <li><a href="https://twitter.com/moris_uncle" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
         </div>
-        <p>Read more about me <a href="{% url 'main:about' %}">here</a></p>
+        <div>
+            <p>Read more about me <a href="{% url 'main:about' %}">here</a></p>
+        </div>
+        <div>
+            Contact
+        </div>
     </footer>
 </body>
 </html>

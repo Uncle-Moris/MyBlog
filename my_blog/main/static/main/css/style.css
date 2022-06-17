@@ -32,3 +32,16 @@ ul li a:hover{
     color: palevioletred;
     font-family: "Comic Sans MS";
 }
+
+.my-media {
+    background-color: palevioletred;
+    align-items: inherit;
+    padding: ;
+
+}
+i {
+    color: white;
+}
+i:hover {
+    color: darkgoldenrod;
+}
