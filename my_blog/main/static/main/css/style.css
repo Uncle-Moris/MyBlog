@@ -1,5 +1,6 @@
 body {
     background-color: rebeccapurple;
+    font-family: 'Space Mono', monospace;
 }
 footer{
     background-color: blue;
@@ -20,14 +21,14 @@ h1 {
 ul li a:hover{
     color: mediumaquamarine;
 }
-a {
+.link-to-post {
     font-family: "Times New Roman";
-    color: wheat;
-}
-/*
-Bla
- */
+    color: pink;
+    text-decoration: none;
 
-a:hover{
+}
+
+.link-to-post:hover{
     color: palevioletred;
+    font-family: "Comic Sans MS";
 }

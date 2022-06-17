@@ -11,7 +11,7 @@
     <ul class="list-group">
         {% for post in posts_list %}
         <li class="list-group-item">
-            <a href="{% url 'posts:details' post.id %}">{{post.title}}</a>
+            <a class="link-to-post" href="{% url 'posts:details' post.id %}">{{post.title}}</a>
         </li>
         {% endfor %}
     </ul>
