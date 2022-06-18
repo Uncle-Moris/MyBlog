@@ -6,7 +6,7 @@ footer{
     background-color: blue;
     padding-bottom: 0;
 }
-h1 {
+.page-title {
     font-family: "Times New Roman";
     text-align: center;
 }
@@ -14,9 +14,11 @@ h1 {
     padding: 0;
 }
 #beautiful_me{
-    width: 1000px;
-    height: 1000px;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
+    display: block;
+    margin: auto;
 }
 ul li a:hover{
     color: mediumaquamarine;
@@ -36,8 +38,6 @@ ul li a:hover{
 .my-media {
     background-color: palevioletred;
     align-items: inherit;
-    padding: ;
-
 }
 i {
     color: white;
