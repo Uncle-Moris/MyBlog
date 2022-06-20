@@ -7,8 +7,10 @@ class UserProfile(models.Model):
     bio = models.TextField(max_length=2000)
 
 
+# Those below will be a pictures for posts
+
 """
-    Those will be a pictures for posts 
+    
 class Images(models.Model):
     name = models.CharField()
     picture = models.ImageField
