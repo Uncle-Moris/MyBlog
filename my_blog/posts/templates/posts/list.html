@@ -1,11 +1,19 @@
 {% extends 'home.html' %}
 
-<!-- The title of post list   -->
-{% block title %}
-    The Posts
+<!-- Static -->
+{% load static %}
+<!-- Style -->
+{% block style %}
+<link rel="{% static 'posts/css/style.css' %}" >
 {% endblock %}
 
+<!-- The title of post list   -->
+{% block title %} The Posts {% endblock %}
+
 {% block content %}
+<link>
+<img src="{% static 'posts/img/letters.jpeg' %}">
+
 <h1 class="page-title">The Posts</h1>
 <div class="container">
     <ul class="list-group">
