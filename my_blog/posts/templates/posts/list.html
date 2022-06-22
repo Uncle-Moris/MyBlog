@@ -3,9 +3,7 @@
 <!-- Static -->
 {% load static %}
 <!-- Style -->
-{% block style %}
-<link rel="{% static 'posts/css/style.css' %}" >
-{% endblock %}
+{% block style %}<link href="{% static 'posts/css/style.css' %}" rel="stylesheet" >{% endblock %}
 
 <!-- The title of post list   -->
 {% block title %} The Posts {% endblock %}
