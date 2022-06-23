@@ -83,7 +83,7 @@ i:hover {
     background-color: palevioletred;
     align-items: center;
     border-radius: 5px;
-    margin-right: -50px;
-    margin-top: 10px;
+    margin:0;
+    padding: 1%;
     border: rgba(78,100,0, 1) solid 1px;
 }
