@@ -14,9 +14,9 @@
     {% block style %} {% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
+<body class="default">
     <header class="my-header"></header>
-    <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <nav class="nav-bar">
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li class="my-nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
@@ -35,7 +35,7 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer class="bg-blue text-center text-white">
+    <footer class="nav-bar">
         <div class="my-media">
             <strong>My media</strong>
             <ul>
@@ -50,7 +50,7 @@
             <p>Read more about me <a href="{% url 'main:about' %}">here</a></p>
         </div>
         <div>
-            Contact
+            <a href="{% url 'main:contact' %}"> Contact </a>
         </div>
     </footer>
 </body>
