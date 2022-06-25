@@ -16,8 +16,8 @@
 </head>
 <body class="default">
     <header class="my-header"></header>
-    <nav class="nav-bar">
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <nav class="my-header nav-bar ">
+        <ul>
             <li class="my-nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
             </li>
@@ -31,11 +31,11 @@
         </ul>
         </ul>
     </nav>
-    <main class="container justify-content-center">
+    <main class="">
         {% block content %}
         {% endblock %}
     </main>
-    <footer class="nav-bar">
+    <footer class="nav-bar footer">
         <div class="my-media">
             <strong>My media</strong>
             <ul>

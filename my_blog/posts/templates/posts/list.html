@@ -11,12 +11,11 @@
 {% block content %}
 <link>
 <img src="{% static 'posts/img/letters.jpeg' %}">
-
+<div>
 <h1 class="page-title">The Posts</h1>
-<div class="container">
-    <ul class="list-group">
+    <ul class="posts">
         {% for post in posts_list %}
-        <li class="list-group-item">
+        <li >
             <a class="link-to-post" href="{% url 'posts:details' post.id %}">{{post.title}}</a>
         </li>
         {% endfor %}
