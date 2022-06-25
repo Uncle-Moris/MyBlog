@@ -1,5 +1,5 @@
-.default{
-    background-color: rgb(69, 1, 69);
+*{
+    background-color: rgb(77, 0, 77);
     font-family: "Times New Roman";
     text-align: inherit;
     text-decoration: none;
@@ -8,8 +8,6 @@
     text-decoration: none;
 }
 .my-header{
-    box-sizing: border-box;
-    position: fixed;
     width: 100%;
     height: 6px;
     background-color: navy;
@@ -58,7 +56,7 @@ i:hover {
 
 .my-nav-item a{
     text-decoration: none;
-    color: white;
+    color: navy;
 }
 .my-nav-item:hover{
     color: red;
@@ -69,15 +67,13 @@ i:hover {
 
 .nav-bar{
     box-sizing: border-box;
-    background-color: rgb(610, 211, 210);
-    padding: 8px;
+    background-color: rgb(700, 10, 0);
+    padding: 5px;
     margin: 0;
     border: rgba(78,1,808, 50) solid 3px;
     width: inherit;
     height: auto;
     position: inherit;
-    justify-content: space-between;
-    display: flex;
 }
 
 .my-media {
@@ -87,7 +83,7 @@ i:hover {
     background-color: palevioletred;
     align-items: center;
     border-radius: 5px;
-    margin-right:0;
+    margin:0;
     padding: 1%;
-    border: rgba(69, 1, 69, 20) solid 3px;
+    border: rgba(78,100,0, 1) solid 1px;
 }
