@@ -76,9 +76,10 @@ i:hover {
     height: 150%;
 }
 
-.my-nav-item a{
+.my-nav-item a,.my-nav-item li{
     text-decoration: none;
     color: white;
+    list-style-type: none}
 }
 .my-nav-item:hover{
     color: red;
@@ -110,11 +111,15 @@ i:hover {
     background-color: palevioletred;
     align-items: center;
     border-radius: 5px;
-    margin-right:0;
-    padding: 1%;
+    margin-left:0;
+    padding: 0;
     border: rgba(69, 1, 69, 20) solid 3px;
-    text-decoration: none;
-    list-style-type: none}
+    text-decoration: none;}
+
+.my-media li{
+
+    list-style-type: none
+}
 
 .content{
     box-sizing:border-box;
