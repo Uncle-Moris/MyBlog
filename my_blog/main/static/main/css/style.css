@@ -79,7 +79,7 @@ i:hover {
 .my-nav-item a,.my-nav-item li{
     text-decoration: none;
     color: white;
-    list-style-type: none}
+    list-style-type: none
 }
 .my-nav-item:hover{
     color: red;
