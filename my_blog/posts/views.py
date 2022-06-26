@@ -6,8 +6,13 @@ from .models import Post
 
 def posts_list(request):
     posts_list = Post.objects.all()
+    q = request.GET.get("title")
+    if q:
+        posts_list = posts_list.filter(title__icontains=q)
     context = {'posts_list': posts_list}
     return render(request,'posts/list.html', context)
+
+
 
 
 def posts_details(request, post_id: int):
