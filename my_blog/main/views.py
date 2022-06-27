@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import ContactForm
 
 
 def home(request):
@@ -10,4 +11,5 @@ def about(request):
 
 
 def contact(request):
-    return render(request, 'main/contact.html')
+    form = ContactForm()
+    return render(request, 'main/contact.html', {'form':form})
