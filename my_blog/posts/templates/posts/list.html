@@ -12,9 +12,15 @@
 <link>
 <div>
 <h1>The Posts</h1>
-    <form>
+    <form class="my-form">
             <input type="text"  id="title" name="title">
-            <input type="submit" value="search">
+            <label for="tags">Chose a Tag</label>
+            <select id="tags" name="tags">
+                {% for tag in tags_list %}
+                    <option value="{{tag.name}}">{{ tag.name }} </option>
+                {% endfor %}
+            </select>
+        <input type="submit" value="search">
     </form>
     <ul class="posts">
         {% for post in posts_list %}
