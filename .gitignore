@@ -4,3 +4,4 @@
 !/my_blog/main/static/main/img/
 !/my_blog/posts/static/posts/img/
 !/my_blog/posts/static/posts/img/
+!/my_blog/db.sqlite3

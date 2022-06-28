@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_extensions',
+    'crispy_forms',
 
     'posts.apps.PostsConfig',
     'main.apps.MainConfig',
@@ -144,3 +145,6 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SHELL_PLUS_PRINT_SQL = True
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

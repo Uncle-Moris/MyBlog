@@ -1,12 +1,10 @@
 {% extends 'home.html' %}
 
 {% block title %} Contact {% endblock %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 <h1>Contact. <strong>Work in progress ...</strong></h1>
-<form action="post" class="my-form" u>
-
-    {{ form.as_table }}
+<form action="post" class="my-form">
+{% crispy form %}
 </form>
-
 {% endblock %}
