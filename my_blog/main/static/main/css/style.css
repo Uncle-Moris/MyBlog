@@ -76,6 +76,7 @@ i:hover {
     border-radius: 4px;
     width:auto;
     height: 150%;
+    transform: translate(10px, 20px);
 }
 
 .my-nav-item a,.my-nav-item li{
