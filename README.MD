@@ -1,4 +1,4 @@
-# My_Blog - blog app
+# MyBlog - blog app
 
 ## Introduction
 This app is my own 
