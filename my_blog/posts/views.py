@@ -10,8 +10,8 @@ def posts_list(request):
     tags_list = Tag.objects.all()
     q = request.GET.get("title")
     tag = request.GET.get("tags")
-    if q or tag:
-        posts_list = posts_list.filter(title__icontains=q, tags=tag.name.get(tag))
+    if q:
+        posts_list = posts_list.filter(title__icontains=q)
 
 
     context = {'posts_list': posts_list, 'tags_list': tags_list}
