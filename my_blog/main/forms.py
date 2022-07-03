@@ -2,16 +2,10 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, ButtonHolder, Submit
 from django import forms
 
-"""
-class ContactForm(forms.Form):
-    email = forms.EmailField()
-    title = forms.CharField(widget=forms.TextInput())
-    content = forms.CharField(widget=forms.Textarea)
-"""
 
 class ContactForm(forms.Form):
     email = forms.EmailField()
-    title = forms.CharField(widget=forms.TextInput())
+    name = forms.CharField(widget=forms.TextInput())
     content = forms.CharField(widget=forms.Textarea)
 
     def __int__(self, *args, **kwargs):
@@ -23,7 +17,7 @@ class ContactForm(forms.Form):
             Fieldset(
                 'Dodaj post',
                 'email',
-                'title',
+                'naem',
                 'content'
             ),
             ButtonHolder(

@@ -12,4 +12,4 @@ def about(request):
 
 def contact(request):
     form = ContactForm()
-    return render(request, 'main/contact.html', {'form':form})
+    return render(request, 'main/contact.html', {'form': form})
