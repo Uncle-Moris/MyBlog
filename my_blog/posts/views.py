@@ -12,8 +12,6 @@ def posts_list(request):
     tag = request.GET.get("tags")
     if q:
         posts_list = posts_list.filter(title__icontains=q)
-
-
     context = {'posts_list': posts_list, 'tags_list': tags_list}
     return render(request,'posts/list.html', context)
 
