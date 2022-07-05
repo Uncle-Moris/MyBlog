@@ -45,12 +45,23 @@ body {
 .nav-bar{
     position: fixed;
     top: 0px;
+    left: 0;
     height: 70px;
     width: 100%;
     background-color: rgba(141, 14, 213, 0.35);
     text-align: center;
     line-height: 70px;
     z-index: 1000;
+}
+.nav-box{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+
+    width: 20%;
+    height: 30px;
+    background-color: red;
+    z-index: 111111;
 }
 
 .nav-item{
@@ -59,22 +70,46 @@ body {
 }
 
 .nav-item a{
+
     margin: 0px 1px 0px 0px;
     padding: 5px 10px;
+
+
+
     font-size: 15px;
+
     color: rgba(87, 234, 217, 0.38);
+
     font-weight: bold;
+
     background-color: hotpink;
     text-shadow: 1px 1px rgb(255, 255, 255);
+
     transition: 0.6s;
-    border-radius: 40px;
+
+    border-radius: 4px;
     transform: translate(10px, 20px);
     text-decoration: none;
     list-style-type: none;
 }
 
-.my-nav-item:hover{
+.nav-item:hover{
+    color: red;
+    box-shadow: 1px -1px 7px palevioletred;
+    text-shadow: 1px -1px 0 palevioletred;
 
+}
+.home{
+    position: absolute;
+    left: 5px;
+}
+.posts{
+    position: absolute;
+    left: 145px;
+}
+.contact{
+    position: absolute;
+    left: 69px;
 }
 
 .footer{
@@ -120,7 +155,7 @@ body {
 }
 
 
-.posts{
+.posts1{
     position: absolute;
     list-style-type: none;
     height: auto;
