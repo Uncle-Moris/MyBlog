@@ -15,8 +15,16 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body class="default">
-    <header class="my-header"></header>
-    <nav class="my-header nav-bar">
+    <header >
+        <div class="header-img">
+            <div class="header-text">
+                <h1>The Uncle Moris Blog.</h1>
+                <p></p>
+            </div>
+            <div class="header-bg"></div>
+        </div>
+    </header>
+    <nav class="nav-bar">
         <ul>
             <li class="my-nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
