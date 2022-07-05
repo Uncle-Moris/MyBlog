@@ -46,23 +46,25 @@ body {
     position: fixed;
     top: 0px;
     left: 0;
-    height: 70px;
-    width: 100%;
+
+
     background-color: rgba(141, 14, 213, 0.35);
     text-align: center;
     line-height: 70px;
     z-index: 1000;
-}
-.nav-box{
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 17px;
     left: 15px;
 
-    width: 20%;
-    height: 30px;
-    background-color: red;
+    padding: 0px;
+    width: auto;
+    height: 35px;
+    background-color: rgba(199, 87, 234,.5);
     z-index: 111111;
+    line-height: 35px;
+    border-radius: 10px ;
 }
+
 
 .nav-item{
     display: inline-block;
@@ -99,18 +101,7 @@ body {
     text-shadow: 1px -1px 0 palevioletred;
 
 }
-.home{
-    position: absolute;
-    left: 5px;
-}
-.posts{
-    position: absolute;
-    left: 145px;
-}
-.contact{
-    position: absolute;
-    left: 69px;
-}
+
 
 .footer{
     position: relative;
