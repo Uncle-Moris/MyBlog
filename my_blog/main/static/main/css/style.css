@@ -2,10 +2,8 @@
     box-sizing: border-box;
 }
 
-.default{
+body {
     position: relative;
-
-    /*background-color: rgb(69, 1, 69);*/
     background-image: linear-gradient(-45deg, rgb(112, 27, 133) 5%, rgb(209, 142, 236) 100%);
     font-family: "Times New Roman";
     text-align: inherit;
@@ -24,7 +22,6 @@
     background-position:0 50%;
 }
 
-
 .header-bg{
     position: absolute;
     height: 100%;
@@ -33,13 +30,11 @@
     z-index: 10;
 }
 
-
 .header-text{
     position: absolute;
     top: 50%;
     left: 50%;
     font-weight:bold ;
-    font-family: ;
     text-shadow:1px 1px #fdfcfc; ;
     transform: translate(-50%, -50%);
     color: rgba(199, 87, 234, 0.38);
@@ -47,77 +42,38 @@
 
 }
 
-
-
-.posts{
-    position: absolute;
-    list-style-type: none;
-    height: auto;
-    padding-top: -1500px;
-    height: 100vh;
-    margin-top: 00px;
-    margin-left: 20px;
-    width: 80%;
-    overflow: auto;
-    font-size: 30px;
+.nav-bar{
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(141, 14, 213, 0.35);
+    text-align: center;
+    line-height: 70px;
+    z-index: 1000;
 }
 
-
-#beautiful_me{
-    position: absolute;
-    top: 150px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    display: block;
-    margin: auto;
-}
-
-.link-to-post {
-    font-family: "Times New Roman";
-    color: pink;
-    text-decoration: none;
-
-
-}
-.link-to-post:hover{
-    color: palevioletred;
-    font-weight: 500;
-}
-
-i {
-    color: white;
-    transition: 1s;
-    list-style-type: none;
-}
-i:hover {
-    color: rgb(69, 1, 69);
-}
-
-.my-nav-item{
+.nav-item{
     display: inline-block;
-    list-style-type: none;
-    text-decoration: none ;
-    padding: 5px 10px;
-    margin: 0px 1px 0px 0px;
-    transition: 0.6s;
-    background-color: hotpink;
-    position: center;
-    border-radius: 4px;
-    width:auto;
-    height: 150%;
-    transform: translate(10px, 20px);
+
 }
 
-.my-nav-item a,.my-nav-item li{
+.nav-item a{
+    margin: 0px 1px 0px 0px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: rgba(87, 234, 217, 0.38);
+    font-weight: bold;
+    background-color: hotpink;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    transition: 0.6s;
+    border-radius: 40px;
+    transform: translate(10px, 20px);
     text-decoration: none;
-    color: white;
-    list-style-type: none
+    list-style-type: none;
 }
+
 .my-nav-item:hover{
-    color: red;
-    box-shadow: 1px -1px 7px palevioletred;
-    text-shadow: 1px -1px 0 palevioletred;
 
 }
 
@@ -127,13 +83,8 @@ i:hover {
     width: 100%;
 }
 
-.nav-bar{
-    padding: 8px;
-    margin: 0;
-    width: 100%;
-    height: auto;
-    display: flex;
-}
+
+
 
 .my-media {
     width: 20%;
@@ -147,9 +98,9 @@ i:hover {
     text-decoration: none;}
 
 .my-media li{
-
     list-style-type: none
 }
+
 .content{
     position: relative;
     width: 100%;
@@ -166,4 +117,46 @@ i:hover {
     min-width: 250px;
     width: 25%;
     height: 200px;
+}
+
+
+.posts{
+    position: absolute;
+    list-style-type: none;
+    height: auto;
+    padding-top: -1500px;
+    height: 100vh;
+    margin-top: 00px;
+    margin-left: 20px;
+    width: 80%;
+    overflow: auto;
+    font-size: 30px;
+}
+#beautiful_me{
+    position: absolute;
+    top: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+}
+.link-to-post {
+    font-family: "Times New Roman";
+    color: pink;
+    text-decoration: none;
+
+
+}
+.link-to-post:hover{
+    color: palevioletred;
+    font-weight: 500;
+}
+i {
+    color: white;
+    transition: 1s;
+    list-style-type: none;
+}
+i:hover {
+    color: rgb(69, 1, 69);
 }

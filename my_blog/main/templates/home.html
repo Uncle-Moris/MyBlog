@@ -14,8 +14,8 @@
     {% block style %} {% endblock %}
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body class="default">
-    <header >
+<body>
+    <header>
         <div class="header-img">
             <div class="header-text">
                 <h1>The Uncle Moris Blog.</h1>
@@ -24,16 +24,16 @@
             <div class="header-bg"></div>
         </div>
     </header>
-    <nav class="nav-bar">
-        <ul>
-            <li class="my-nav-item">
+    <nav >
+        <ul class="nav-bar">
+            <li class="nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
             </li>
-            <li class="my-nav-item">
+            <li class="nav-item">
                 <a href="{% url 'posts:list' %}"> Posts </a>
             </li>
 
-            <li class="my-nav-item">
+            <li class="nav-item">
                 <a href="{% url 'main:contact' %}"> Contact </a>
             </li>
         </ul>
