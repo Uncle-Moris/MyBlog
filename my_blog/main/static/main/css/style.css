@@ -142,15 +142,19 @@ body {
     height: 200px;
 }
 
-
-.posts1{
+.posts_search_bar{
     position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.posts_list{
+    position: absolute;
+    top: 15%;
     list-style-type: none;
-    height: auto;
     padding-top: -1500px;
     height: 100vh;
-    margin-top: 00px;
-    margin-left: 20px;
     width: 80%;
     overflow: auto;
     font-size: 30px;
@@ -168,8 +172,6 @@ body {
     font-family: "Times New Roman";
     color: pink;
     text-decoration: none;
-
-
 }
 .link-to-post:hover{
     color: palevioletred;

@@ -9,20 +9,21 @@
 {% block title %} The Posts {% endblock %}
 
 {% block content %}
-<link>
+
 <div>
 <h1>The Posts</h1>
-    <form >
+    <form class="posts_search_bar">
             <input type="text"  id="title" name="title">
-            <label for="tags">Chose a Tag</label>
+            <label for="tags"></label>
             <select id="tags" name="tags">
+                    <option value="wybierz">wybierz</option>
                 {% for tag in tags_list %}
                     <option value="{{tag.name}}">{{ tag.name }} </option>
                 {% endfor %}
             </select>
         <input type="submit" value="search">
     </form>
-    <ul class="posts">
+    <ul class="posts_list">
         {% for post in posts_list %}
         <li >
             <a class="link-to-post" href="{% url 'posts:details' post.id %}">{{post.title}}</a>
