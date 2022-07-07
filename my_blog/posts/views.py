@@ -12,8 +12,10 @@ def posts_list(request):
     tag = request.GET.get("tags")
     if q:
         posts_list = posts_list.filter(title__icontains=q)
+    elif tag:
+        posts_list = posts_list.filter(tags__name__icontains=tag)
     context = {'posts_list': posts_list, 'tags_list': tags_list}
-    return render(request,'posts/list.html', context)
+    return render(request, 'posts/list.html', context)
 
 
 def posts_details(request, post_id: int):
