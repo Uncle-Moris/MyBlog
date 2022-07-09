@@ -10,13 +10,13 @@
 
 {% block content %}
 
-<div>
-<h1>The Posts</h1>
+
+    <h1>The Posts</h1>
     <form class="posts_search_bar">
             <input type="text"  id="title" name="title">
             <label for="tags"></label>
             <select id="tags" name="tags">
-                    <option value="wybierz">wybierz</option>
+                    <option value="">wybierz</option>
                 {% for tag in tags_list %}
                     <option value="{{tag.name}}">{{ tag.name }} </option>
                 {% endfor %}
@@ -30,5 +30,5 @@
         </li>
         {% endfor %}
     </ul>
-</div>
+
 {% endblock %}
