@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 
     'posts.apps.PostsConfig',
     'main.apps.MainConfig',
-    'tags.apps.TagsConfig'
+    'tags.apps.TagsConfig',
+    'register.apps.RegisterConfig'
 ]
 
 MIDDLEWARE = [

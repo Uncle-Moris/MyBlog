@@ -186,3 +186,7 @@ i {
 i:hover {
     color: rgb(69, 1, 69);
 }
+
+@media (min-width: 762px) {
+
+}
