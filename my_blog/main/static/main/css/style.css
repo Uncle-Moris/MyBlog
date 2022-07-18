@@ -1,5 +1,15 @@
+@keyframes running-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -12,6 +22,8 @@ body {
   color: white;
   text-decoration: none;
   height: 100vh;
+  background-size: 800%;
+  animation: running-bg 5s linear infinite;
 }
 
 .header-img {
