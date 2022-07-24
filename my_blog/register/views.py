@@ -13,5 +13,3 @@ def register(response):
     else:
         form = RegisterForm()
     return render(response, "accounts/register.html", {"form": form})
-
-# Create your views here.
