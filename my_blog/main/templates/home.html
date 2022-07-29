@@ -39,10 +39,12 @@
             </li>
         </ul>
     </nav>
+
     <div class="reg">
-        <button class="login-btn"><a href="/login/"></a>Login</button>
-        <button class="register-btn" ><a href="/register/"></a>Register</button>
+        <button class="login-btn"><a href="{% url 'register:login' %}">Login</a></button>
+        <button class="register-btn" ><a href="{% url 'register:register' %}">Register</a></button>
     </div>
+
     <main class="content">
         {% block content %}
         {% endblock %}
