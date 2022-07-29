@@ -28,23 +28,23 @@
     </header>
     <nav>
             <ul class="nav-bar">
-            <li class="nav-item home">
+            <li class="nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
             </li>
-            <li class="nav-item posts">
+            <li class="nav-item">
                 <a href="{% url 'posts:list' %}"> Posts </a>
             </li>
-            <li class="nav-item contact">
+            <li class="nav-item">
                 <a href="{% url 'main:contact' %}"> Contact </a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'register:login' %}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'register:register' %}">Register</a>
             </li>
         </ul>
     </nav>
-
-    <div class="reg">
-        <button class="login-btn"><a href="{% url 'register:login' %}">Login</a></button>
-        <button class="register-btn" ><a href="{% url 'register:register' %}">Register</a></button>
-    </div>
-
     <main class="content">
         {% block content %}
         {% endblock %}
