@@ -1,13 +1,15 @@
 @use './colors' as colors ;
 @use './animations' as animations;
 
-
 *, *::before, *::after{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+.goofy{
+    background: #fdfcfc;
+ }
 body {
     position: relative;
     background-image: colors.$background-gradient;
@@ -19,13 +21,14 @@ body {
     text-decoration: none;
     height: 100vh;
     background-size: 800% ;
-    animation: running-bg 30s linear infinite;
+    animation: running-bg 7s linear infinite;
 }
 
 .header-img{
     position: relative;
     height: 70px;
-    background-image: url("../img/hd-wallpaper.jpeg");
+    background-image: url("/main/static/main/img/hd-wallpaper.jpeg");
+
     background-size: cover;
     background-position:0 50%;
     border: rgba(234, 229, 238, 0.54) 2px solid;
