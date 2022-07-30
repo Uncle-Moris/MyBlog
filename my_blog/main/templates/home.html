@@ -37,12 +37,21 @@
             <li class="nav-item">
                 <a href="{% url 'main:contact' %}"> Contact </a>
             </li>
+
+            {% if user.is_authenticated %}
             <li class="nav-item">
+                <a href="{% url 'register:logout' %}">Logout</a>
+            </li>
+            {% else  %}
+             <li class="nav-item">
                 <a href="{% url 'register:login' %}">Login</a>
             </li>
+
             <li class="nav-item">
                 <a href="{% url 'register:register' %}">Register</a>
             </li>
+            {% endif %}
+
         </ul>
     </nav>
     <main class="content">
