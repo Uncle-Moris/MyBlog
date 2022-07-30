@@ -40,7 +40,7 @@
 
             {% if user.is_authenticated %}
             <li class="nav-item">
-                <a href="#">Logout</a>
+                <a href="{% url 'register:logout' %}">Logout</a>
             </li>
             {% else  %}
              <li class="nav-item">
