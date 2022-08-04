@@ -6,6 +6,10 @@
     background-position: 100% 0;
   }
 }
+/*
+ sass style.scss:css/style.css -w
+
+*/
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -117,6 +121,7 @@ body {
   padding: 0;
   border: rgb(69, 1, 69) solid 3px;
   text-decoration: none;
+  display: flex;
 }
 
 .my-media li {
@@ -159,16 +164,6 @@ body {
   font-size: 24px;
 }
 
-.post_content {
-  position: absolute;
-  top: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  height: 90%;
-  width: 90%;
-}
-
 #beautiful_me {
   position: absolute;
   top: 150px;
@@ -198,6 +193,21 @@ i {
 
 i:hover {
   color: rgb(69, 1, 69);
+}
+
+.post_content {
+  position: absolute;
+  top: 44px;
+  bottom: 44px;
+  left: 44px;
+  right: 44px;
+  height: 90%;
+  width: 90%;
+}
+
+.page-title {
+  position: absolute;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
