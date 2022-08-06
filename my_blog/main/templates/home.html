@@ -26,7 +26,7 @@
             <div class="header-bg"></div>
         </div>
     </header>
-    <nav>
+        <nav>
             <ul class="nav-bar">
             <li class="nav-item">
                 <a href="{% url 'main:home' %}"> Home </a>
@@ -37,7 +37,6 @@
             <li class="nav-item">
                 <a href="{% url 'main:contact' %}"> Contact </a>
             </li>
-
             {% if user.is_authenticated %}
             <li class="nav-item">
                 <a href="{% url 'register:logout' %}">Logout</a>
@@ -51,9 +50,8 @@
                 <a href="{% url 'register:register' %}">Register</a>
             </li>
             {% endif %}
-
-        </ul>
-    </nav>
+            </ul>
+        </nav>
     <main class="content">
         {% block content %}
         {% endblock %}
