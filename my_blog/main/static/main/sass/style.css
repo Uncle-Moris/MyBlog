@@ -99,7 +99,7 @@ body {
 }
 
 .nav-item:hover {
-  box-shadow: 1px 1px 10px palevioletred;
+  box-shadow: 1px 1px 10px #ab0b1e;
 }
 
 .footer {

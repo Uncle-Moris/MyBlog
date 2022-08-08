@@ -1,12 +1,14 @@
 {% extends 'home.html' %}
 {% load static %}
+{% load thumbnail %}
 <!-- The static title of current template  -->
 {% block title %}
     Umm lemony
 {% endblock %}
 
 {% block content %}
-
-<img src="{% static 'main/img/janpawel.jpeg' %}" id="beautiful_me" class="pope">
-
+    {% thumbnail "main/img/janpawel.jpeg" "200x200" as img %}
+    <!--<img src="{% static 'main/img/janpawel.jpeg' %}" id="beautiful_me" class="pope"> -->
+    <img src="{{ img.url}}">
+    {% endthumbnail %}
 {% endblock %}

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'django_extensions',
     'crispy_forms',
+    'sorl.thumbnail',
 
     'posts.apps.PostsConfig',
     'main.apps.MainConfig',

@@ -11,3 +11,6 @@ services:
       - POSTGRES_PASSWORD=password
     volumes:
       - ./data/db:/var/lib/postgresql/data
+  #web:
+  #  image: node
+  #  restart: always
