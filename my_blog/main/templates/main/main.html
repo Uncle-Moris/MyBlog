@@ -7,8 +7,12 @@
 {% endblock %}
 
 {% block content %}
-    {% thumbnail "main/img/janpawel.jpeg" "200x200" as img %}
+    <img src="{% static 'main/img/capitan.gif' %}" id="beautiful_me" >
+    {% thumbnail 'main/img/janpawel.jpeg' "200x200" as img %}
+
+
     <!--<img src="{% static 'main/img/janpawel.jpeg' %}" id="beautiful_me" class="pope"> -->
-    <img src="{{ img.url}}">
+
+    <img src="{{ img.url }}" class="pope">
     {% endthumbnail %}
 {% endblock %}
