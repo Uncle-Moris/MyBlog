@@ -14,7 +14,7 @@
 
    <!-- <img src="{% static 'main/img/me.JPG' %}" id="beautiful_me"> -->
 
-    {% thumbnail '/main/img/me.JPG' "200x200" as img %}
+    {% thumbnail 'my_blog/my_blog/main/static/main/img/me.JPG' "200x200" as img %}
     <img src="{{ img.url}}" id="beautiful_me">
     {% endthumbnail %}
 

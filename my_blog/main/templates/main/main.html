@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-    <img src="{% static 'main/img/capitan.gif' %}" id="beautiful_me" >
+
     {% thumbnail 'main/img/janpawel.jpeg' "200x200" as img %}
 
 
@@ -15,4 +15,5 @@
 
     <img src="{{ img.url }}" class="pope">
     {% endthumbnail %}
+    <button class="alert-btn">Alert button</button>
 {% endblock %}
