@@ -207,4 +207,19 @@ i:hover {
   margin: auto;
 }
 
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: goldenrod;
+  margin: 50px auto;
+}
+
+.sq-btn {
+  margin: auto;
+}
+
+.red {
+  background-color: #ab0b1e;
+}
+
 /*# sourceMappingURL=style.css.map */

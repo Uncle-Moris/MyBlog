@@ -13,7 +13,7 @@
 
     <link href="{% static 'main/sass/css/style.css' %}" rel="stylesheet">
     {% block style %} {% endblock %}
-    <script src="{% static 'main/js/main.js' %}"></script>
+
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
@@ -74,5 +74,6 @@
             <a href="{% url 'main:contact' %}"> Contact </a>
         </div>
     </footer>
+    <script src="{% static 'main/js/main.js' %}"></script>
 </body>
 </html>
