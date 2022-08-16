@@ -9,12 +9,14 @@
 /*
  sass style.scss:css/style.css -w
 */
+/* Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Body */
 .goofy {
   background: #fdfcfc;
 }
@@ -33,6 +35,7 @@ body {
   animation: running-bg 7s linear infinite;
 }
 
+/* Header */
 .header-img {
   position: relative;
   height: 70px;
@@ -61,6 +64,7 @@ body {
   z-index: 100;
 }
 
+/* Navigation */
 .nav-bar {
   position: fixed;
   top: 0px;
@@ -102,6 +106,7 @@ body {
   box-shadow: 1px 1px 10px #ab0b1e;
 }
 
+/* Footer */
 .footer {
   position: relative;
   bottom: 0px;
