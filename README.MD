@@ -7,7 +7,8 @@ I would like develop those project for a long time to track my skills improvemen
 Backend
 * python 3.10
 * django 4
-* PostgreSQL
+* PostgreSQL as main databse 
+* redis as chashing 
 
 Frontend 
 * vanilla js
