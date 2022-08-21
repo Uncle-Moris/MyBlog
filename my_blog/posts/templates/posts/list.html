@@ -23,7 +23,7 @@
             </select>
         <input type="submit" value="search">
     </form>
-    <ul class="posts_list">
+    <ul class="posts_list container">
         {% for post in posts_list %}
         <li >
             <a class="link-to-post" href="{% url 'posts:details' post.id %}">{{post.title}}</a>
