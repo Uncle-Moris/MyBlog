@@ -56,74 +56,44 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer class="nav-bar footer container">
-        <div class="my-media">
-            <strong>My media</strong>
-            <ul>
-                 <li><a href="https://www.linkedin.com/in/maurycy-wo%C5%BAnica" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                 <li><a href="https://github.com/Uncle-Moris" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                 <li><a href="https://www.youtube.com/channel/UCkjLEx2izZMNuCD25dVVWwg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                 <li><a href="https://www.instagram.com/unclemoris/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                 <li><a href="https://twitter.com/moris_uncle" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="my-media">
-            <p>Read more about me <a href="{% url 'main:about' %}">here</a></p>
-        </div>
-        <div class="my-media">
-            <a href="{% url 'main:contact' %}"> Contact </a>
-        </div>
-    </footer>
-    <script src="{% static 'main/js/main.js' %}"></script>
+
+
 
 <!-- New Footer -->
     <div class="container">
   <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+
     <div class="col mb-3">
-      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      </a>
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Contact</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="{% url 'main:contact' %}" class="nav-link p-0 text-muted">Home</a></li>
+
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>my media</h5>
+      <ul class="nav flex-column">
+          <li><a href="https://www.linkedin.com/in/maurycy-wo%C5%BAnica" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Uncle-Moris" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCkjLEx2izZMNuCD25dVVWwg" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="https://www.instagram.com/unclemoris/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/moris_uncle" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="col mb-3">
       <p class="text-muted">© 2022</p>
-    </div>
-
-    <div class="col mb-3">
-
-    </div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-
-    <div class="col mb-3">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-      </ul>
     </div>
   </footer>
 <!-- end of New Footer -->
 </div>
+
+    <script src="{% static 'main/js/main.js' %}"></script>
+
 </body>
 </html>
