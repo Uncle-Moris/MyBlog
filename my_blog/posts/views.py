@@ -10,8 +10,8 @@ def posts_list(request):
     tags_list = Tag.objects.all()
     q = request.GET.get("title")
     tag = request.GET.get("tags")
-    if q:
-        posts_list = posts_list.filter(title__icontains=q)
+    if title:
+        posts_list = posts_list.filter(title__icontains=title)
     elif tag:
         posts_list = posts_list.filter(tags__name__icontains=tag)
 
